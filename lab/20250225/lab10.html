@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width="500">
+        <tr>
+            <th>상품번호</th>
+            <td><input type="text" name="goodsNum"/>자동부여</td>
+        </tr>
+        <tr>
+            <th>상품명</th>
+            <td><input type="text" name="goodsName"/></td>
+        </tr>
+        <tr>
+            <th>상품가격</th>
+            <td><input type="text" name="goodsPrice"/></td>
+        </tr>
+        <tr>
+            <th>배송비</th>
+            <td><input type="text" name="shipping"/></td>
+        </tr>
+        <tr>
+            <th>상품설명</th>
+            <td><input type="text" name="goodsDetail"/></td>
+        </tr>
+        
+        <tr>
+            <th>대문이미지</th>
+            <td>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <input type="file" name="uploadfile1"/>
+                </form>
+            </td>
+        <tr>
+            <th>이미지</th>
+            <td>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <input type="file" name="uploadfile2"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="상품등록"/></td>
+        </tr>
+    </table>
+</body>
+</html>
