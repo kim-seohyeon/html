@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    텍스트 전송<br/>
+    <form action="#" method="get">
+        상점 이름 : <input type="text" name="storeName"/><br/>
+        수량 : <input type="number" name="num" min="1" value="1"/><br/>
+        <input type="submit" value="전송"/>
+    </form>
+
+    이미지 전송<br/>
+    <!--method="post", enctype="multipart/form-data" 2진 : 비트전송-->
+    <form action="#" method="post" enctype="multipart/form-data" >
+        회원이름 : <input type="text" name="storeName"/><br/>
+        회원사진 : <input type="file" name="uploadFile"/><br/>
+        <input type="submit" value="전송"/>
+    </form>
+
+    <form action="#" method="post" enctype="multipart/form-data" >
+        회원이름 : <input type="text" name="storeName"/><br/>
+        회원사진 : <input type="file" name="uploadFile" multiple/><br/>
+        <input type="submit" value="전송"/>
+    </form>
+
+</body>
+</html>

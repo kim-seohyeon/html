@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form : 
+         name : 서버에 값을 전달하기 위한 변수
+         get : 전달되는 값이 보임
+         post : 전달되는 값이 보이지 않음
+    -->
+    <!--
+        href, action : 이동할 파일이나 주소
+    -->
+    <form action="#aaa.html" method="get">
+        <table>
+            <tr>
+                <td><input type="text" name="id" /></td>
+                <td rowspan="2"><input type="submit" value="로그인" /></td>
+            </tr>
+            <tr>
+                <td><input type="password" name="pw" /></td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#aaa.html" method="post">
+        <table>
+            <tr>
+                <td><input type="text" name="id" /></td>
+                <td rowspan="2"><input type="submit" value="로그인" /></td>
+            </tr>
+            <tr>
+                <td><input type="password" name="pw" /></td>
+            </tr>
+        </table>
+    </form>
+
+    <a href="aaa.html?id=윤지영바보&pw=vnq">aaaaq/get방식</a>
+    <a href = "https://www.google.com/search?q=jsp">jsp검색</a>
+
+    <form action="https://www.naver.com/search.naver" method="get">
+        <input type="text" name="query"/> <!--빈요소-->
+        <input type="submit" value="검색"/>
+    </form>
+
+</body>
+</html>

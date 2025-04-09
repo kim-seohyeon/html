@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method의 기본값은 get-->
+    <!-- readonly 읽기만-->
+    <!-- placeholder : 힌트-->
+    <!-- required 필수로 입력해야 함-->
+    <form action="aaa.html"> 
+        사원번호 : <input type="text" name="employeeid" value="hk_100001" readonly/><br/>
+        아이디 : <input type="text" name="userid" size="30" placeholder="아이디 또는 @ 이하 모두 입력"/><br/>
+        이메일 : <input type="email" name="useremail" placeholder="@이하 모두 입력"/><br/>
+        검색 : <input type="search" name="search"/><br/>
+        홈페이지 : <input type="utl" name="homePage" placeholder="http://"/><br/>
+        연락처 : <input type="tel" name="userPhone"/><br/>
+        수량 : <input type="number" name="qty" min="1" max="10" value="1" step="2"/><br/>
+        몇 % : <input type="range" name="range" min="0" max="100" value="50"/><br/>
+        색상 : <input type="color" name="clr" value="#7d3212"/><br/> <!--255 255 255-->
+        날짜 : <input type="date" name="date" value="2025-02-07"/><br/>
+        월 : <input type="month" name="mon" value="2025-08" /><br/>
+        주 : <input type="week" name="wk" value="2025-W06"/><br/>
+        타임 : <input type="time" name="t" value="17:46"/><br/>
+        현지시간 : <input type="datetime-local" name="loc" value="2025-02-08T06:48"/><br/>
+
+        <input type="submit" value="전송"/>
+    </form>
+</body>
+</html>
